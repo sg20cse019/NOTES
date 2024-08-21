@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #userProfile {
+            height: 100vh;
+            width: 100vw;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table {
+            height: 500px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+            border: 2px solid aliceblue;
+        }
+
+        tr {
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+
+        td {
+            border: 2px solid aliceblue;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="userProfile">
+
+    </section>
+</body>
+<script>
+    let url = window.location.search
+    let obj = new URLSearchParams(url)
+    let id = obj.get('id')
+
+
+
+    function getProfile() {
+        fetch(`http://localhost:5000/users/${id}`)
+            .then((res) => { return res.json() })
+            .then((data) => {
+                console.log(data)
+                document.querySelector('#userProfile').innerHTML = `
+                        <table>
+                            <tr>
+                                <td>Name:</td>
+                                <td>${data.name}</td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td>${data.email}</td>
+                            </tr>
+                            <tr>
+                                <td>Phone:</td>
+                                <td>${data.phone}</td>
+                            </tr>
+                            <tr>
+                                <td><button onclick="goToEdit()">EDIT</button></td>
+                                <td><button>DELETE</button></td>
+                            </tr>
+                        </table>
+                    `;
+                })
+            .catch((err) => { console.log(err) })
+    }
+    getProfile()
+
+   function goToEdit(id){
+        window.location.assign(`./EditUser.html?id${id}`)
+        console.log(id)
+    }
+    function deleteUser(id){
+            fetch(`http://localhost:5000/users/${id}`,{
+                method:"DELETE",
+                headers:{"content-type":"application/json"}
+            }).then(()=>{
+                console.log("deleted");
+                window.location.assign("./users.html")
+            })
+        }
+</script>
+
+</html>

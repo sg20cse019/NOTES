@@ -1,0 +1,11 @@
+p{
+    height: 50vh;
+    width: 50vw;
+    /* background-image:url(./risk.jpg);
+    background-position:center;
+    background-repeat: no-repeat; */
+    
+     /* background: radial-gradient(red,rgb(99, 60, 163),#16e1cd,pink,purple);
+     background: linear-gradient(red,green,blue); */
+     border: 10px red dotted;
+}

@@ -1,0 +1,19 @@
+package javabasic;
+
+public class javabasic1 {
+ 
+    public static void main(String[] args) {
+    	int bal = 175000;
+        int withdraw = 2000;
+        //withdraw multiple times till the with draw fails, also 
+        //specify how many withdraw operations has been done 
+        int i=1;
+       while(i<=90) {
+    	  
+    		   bal -= withdraw;
+    	   System.out.println();
+    	   
+    	   i++;
+      }
+    }
+}

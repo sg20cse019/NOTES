@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box"> 
+    <div class="form">
+      <form id="profile-form">
+        <h2>Add Users</h2>
+        <div class="inputbox">
+          <input type="text" id="name" name="name" required>
+          <span>Name</span>
+          <i></i>
+        </div>
+        <div class="inputbox">
+          <input type="text" id="salary" name="salary" required>
+          <span>Salary</span>
+          <i></i>
+        </div>
+        <div class="inputbox">
+          <input type="text" id="company" name="company" required>
+          <span>Company</span>
+          <i></i>
+        </div>
+        <div style="display: flex;">
+          <input type="submit" value="Add User" style="margin-left: 10px;">
+        </div>
+      </form>       
+    </div>
+  </div>
+  <script defer>
+    //The defer attribute is used in a <script> tag to indicate that the script should be executed after the document has been parsed !!!
+    window.onload = function() {
+      const form = document.getElementById('profile-form');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const company = document.getElementById('company').value;
+        const salary = document.getElementById('salary').value;
+        const profile = { name, company, salary };
+        fetch('http://localhost:3000/profiles', {
+          method: 'POST',
+          body: JSON.stringify(profile),
+        })
+        .then(response => response.json())
+        .then(() => window.location.href = 'profiles.html')
+        .catch(error => console.error('Error:', error));
+      });
+    };
+  </script>
+</body>
+</html>

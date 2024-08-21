@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    gap: 5px;
+    height: 700px;
+}
+
+.left-con{
+    width:20%;
+    border: 2px solid red;
+    padding: 10px;
+}
+.left-con-top{
+    border: 2px solid rgb(154, 43, 43);
+    height: 20%;
+}
+.left-con-second{
+    border: 2px solid rgb(72, 67, 67);
+    height: 80%;
+}
+.middle-con{
+    width: 60%;
+    border: 2px solid green; 
+}
+.right-con{
+    width: 20%;
+    border: 2px solid blue;
+}
+.footer{
+    position: fixed;
+    width: 100%;
+    border: 2px solid orange;
+    height: 80px;
+    bottom: 0;
+    /* bottom: 1px; */
+}

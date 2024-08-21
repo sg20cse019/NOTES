@@ -1,0 +1,41 @@
+/* animation example */
+@keyframes bg {
+    0%{ background-color:blueviolet; }
+    10%{ background-color:rgb(43, 147, 226); }
+    25%{ background-color:rgb(43, 226, 61); }
+    50%{ background-color:rgb(224, 48, 133); }
+    75%{ background-color:rgb(226, 43, 52); }
+    100%{ background-color:rgb(180, 226, 43); }
+    
+}
+/* transform example */
+section>article>#profile>img:hover{
+    transform: rotate(360deg) scale(0.7);
+    transition: 10s;
+}
+.button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    animation-name:bg; /*animation name acts like varible name while using*/
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.follow-button {
+    background-color: #620657;
+    color: white;
+    border:2px #620657;
+}
+.message-button {
+    background-color: #620657;
+    color: white;
+    border:2px #620657;
+
+}
+.button:hover {
+    opacity: 0.8;
+    background-color:rgb(50, 18, 86) ;
+}

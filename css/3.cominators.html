@@ -1,0 +1,47 @@
+<head>
+    <title>Document</title>
+    <style>
+       /* 1. selects all div present inside section  */
+        section div{
+            background-color: chocolate;
+        }
+        /* 2. selects div only present inside section (child not grand child)
+        section>div{
+            background-color: blueviolet;
+        } */
+        /* 3. selects only one particular tag
+        section+div{
+            background-color: yellow;
+        } */
+        /* 4. selects div present after section
+        section~div{
+            background-color: tomato;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>combinator selectors
+        <ol>
+            <li>desecendt</li>
+            <li>child</li>
+            <li>adjacent sibling</li>
+            <li>general sibling</li>
+        </ol>
+    </h1>
+    <p>
+        <section>
+            <div>div 1</div>
+            <article>
+                <div>div 2</div>
+                <div>div 3</div>
+            </article>
+            <div>div 4</div>
+            <span>span 1</span>
+        </section>
+        <div>div 5</div>
+        <div>div 6</div>
+    </p>
+</body>
+
+</html>

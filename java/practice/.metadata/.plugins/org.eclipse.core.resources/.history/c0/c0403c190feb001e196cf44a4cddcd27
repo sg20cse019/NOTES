@@ -1,0 +1,18 @@
+package javabasic;
+import java.util.*;
+
+public class javabasic1{
+    public static void main(String[] args) {
+        System.out.println("Enter the number: ");
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int factorial = 1; // Initialize factorial to 1
+        
+        for (int i = 1; i <= n; i++) {
+           n = (n-i)+(n-i);
+        }
+
+        System.out.println( n );
+        scanner.close();
+    }
+}

@@ -1,0 +1,20 @@
+package project2;
+public class javabasic1{
+    public static void main(String[] args) {
+        int bal = 175000;
+        int withdraw = 2000;
+        int withdrawCount = 0;
+
+        System.out.println("Starting balance: " + bal);
+        System.out.println("Withdrawal amount: " + withdraw);
+
+        while (bal >= withdraw) {
+            bal -= withdraw;
+            withdrawCount++;
+            System.out.println("Withdrawal successful. Balance: " + bal);
+        }
+
+        System.out.println("Withdrawal failed. Insufficient balance.");
+        System.out.println("Total number of successful withdrawals: " + withdrawCount);
+    }
+}

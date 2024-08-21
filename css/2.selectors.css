@@ -1,0 +1,18 @@
+body{
+    color: #16e3c4;
+}
+#lokiid{
+    font-size: 100px;
+    color:rebeccapurple;
+}
+.lokiclass {
+    color: steelblue;
+}
+li{
+    font-family: sans-serif;
+    color: crimson;
+}
+h1,p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+}

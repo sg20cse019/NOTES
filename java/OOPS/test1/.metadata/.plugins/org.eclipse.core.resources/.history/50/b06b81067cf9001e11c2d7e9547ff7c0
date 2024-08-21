@@ -1,0 +1,18 @@
+package test1;
+
+
+class mobile1() {
+	boolean batterycapacity = true;
+	boolean currency = true;
+}
+class operations() {
+	
+}
+public static class mobile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

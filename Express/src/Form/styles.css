@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(52, 73, 110), rgb(34, 53, 86));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section > nav {
+    background-color: rgb(26, 25, 25);
+    color: aliceblue;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section > nav > h2 {
+    margin: 0;
+}
+
+section > .mainpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section > .mainpage > .backsq {
+    background: radial-gradient(yellow, orange);
+    height: 380px;
+    width: 380px;
+    border-radius: 10px;
+    position: absolute;
+    transform: rotate(-8deg);
+}
+
+section > .mainpage > .frontsq {
+    background-color: aliceblue;
+    height: 380px;
+    width: 380px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+section > .mainpage > .frontsq > h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+section > .mainpage > .frontsq > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > .mainpage > .frontsq > form > input {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: medium;
+    background-color: aliceblue;
+    border: none;
+    border-bottom: 2px solid #272525;
+    width: 80%;
+    height: 30px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+section > .mainpage > .frontsq > form > input:focus {
+    outline: none;
+}
+
+section > .mainpage > .frontsq > form > .loginbtn {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: medium;
+    border: none;
+    background-color: #272525;
+    color: aliceblue;
+    height: 30px;
+    width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section > .mainpage > .frontsq > form > .loginbtn:hover {
+    background-color: #1a1a1a;
+}

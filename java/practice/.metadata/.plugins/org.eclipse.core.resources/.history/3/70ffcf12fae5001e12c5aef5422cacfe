@@ -1,0 +1,10 @@
+package javabasic;
+
+public class javabasic1{
+	public static void main(String[] args) {
+		int x[] = {1,2,23,3,4,45,5,};
+		for(int i= x.length-3 ; i<= x.length-1;i++) {
+		System.out.println(x[i]);
+	}
+}
+}

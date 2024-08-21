@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-shadow: 10px 10px 20px black;
+}
+h2{
+    word-spacing: 40px;
+    letter-spacing: 40px;
+    line-height: 100px;
+    color: blueviolet;
+}
+h3{
+    font-size:50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

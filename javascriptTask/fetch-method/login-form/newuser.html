@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./newuserstyles.css">
+    <title>NewUser</title>
+</head>
+
+<body>
+    <section>
+        <article>
+            <label for="fname" class="fnamel">Firstname:</label>
+            <input type="text" class="fname" id="fname" name="firstname" placeholder="Enter your first name">
+
+            <label for="lname" class="lnamel">Lastname:</label>
+            <input type="text" class="lname" id="lname" name="lastname" placeholder="Enter your last name"> <br>
+
+            <label for="dob" class="dobl">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="city" class="cityl">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city"> <br>
+
+            <label for="state" class="statel">State/Province:</label>
+            <input type="text" id="state" name="state" placeholder="Enter your state/province"> <br>
+
+            <label for="country" class="countryl">Country:</label>
+            <input type="text" id="country" name="country" placeholder="Enter your country"> <br>
+
+            <label for="username" class="userlabel">Username:</label>
+            <input type="text" class="username" id="username" name="username" placeholder="Choose a username">
+
+            <label for="password" class="userpass">Password:</label>
+            <input type="password" class="password" id="password" name="password" placeholder="Enter your password">
+
+            <label for="confirm" class="confirml">Confirm Password:</label>
+            <input type="password" class="confirm" id="confirm" name="password" placeholder="Confirm your password">
+
+            <div style="display: flex; padding: 10px;">
+                <p style="color: white; padding-right: 5px;">Please select your gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male" style="color: white;">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" style="color: white;">Female</label><br>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other" style="color: white;">Other</label><br>
+            </div>
+            <div class="confirmation" style="padding-bottom: 10px;">
+                <input type="checkbox" id="confirmInfo" name="confirmInfo" required>
+                <label for="confirmInfo" style="color: white;">I confirm that all the information provided is correct and I agree to the terms
+                    and conditions.</label>
+            </div>
+            <button id="loginbtn">Register</button>
+        </article>
+    </section>
+    <script src="./newuserfun.js"></script>
+</body>
+
+</html>

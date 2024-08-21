@@ -1,0 +1,20 @@
+package test1;
+
+
+class mobile1{
+	
+	boolean batterycapacity = true;
+	boolean currency = true;
+	
+	if(batterycapacity==true) {
+		
+	}
+}
+public class mobile {
+
+	public void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

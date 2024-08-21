@@ -1,0 +1,36 @@
+package test1;
+
+class Person {
+    String name;
+    int number;
+    String course;
+
+   
+    public Person(String name, int age, String occupation) {
+        this.name = name;
+        this.number = number;
+        this.course = course;
+    }
+
+
+    public void displayDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Number: " +number );
+        System.out.println("Course: " + course);
+    }
+}
+
+public class Student {
+    public static void main(String[] args) {
+       
+        String name = "alok";
+        int age = 21;
+        String course ="full-stack";
+
+        Person person = new Person(name,number,course);
+
+        System.out.println("\nPerson Details:");
+        person.displayDetails();
+
+    }
+}

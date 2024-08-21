@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./classic-retro-gaming-console-thumb.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+article {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fname,
+.lname,
+.dob,
+.location,
+.username,
+.password,
+.confirm {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.fname,
+.lname{
+    width: 33%;
+}
+.username{
+    width: 100%;
+}
+
+.password,
+.confirm{
+    width: 28%;
+}
+#city,
+#state,
+#country{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#city{
+    width: 50%;
+}
+
+
+.userlabel,
+.userpass,
+.fnamel,
+.lnamel,
+.confirml,
+.dobl,
+.locationl,
+.cityl,
+.statel,
+.countryl,
+#male,
+#female,
+#other {
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+#loginbtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#loginbtn:hover {
+    background-color: #45a049;
+}

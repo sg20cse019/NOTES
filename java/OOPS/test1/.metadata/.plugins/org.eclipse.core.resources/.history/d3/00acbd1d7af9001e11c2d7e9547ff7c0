@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+class Person {
+    private String name;
+    private int age;
+    private String occupation;
+
+   
+    public Person(String name, int age, String occupation) {
+        this.name = name;
+        this.age = age;
+        this.occupation = occupation;
+    }
+
+
+    public void displayDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Occupation: " + occupation);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+       
+        String name = "alok";
+        int age = 21;
+        String occupation ="student";
+
+        Person person = new Person(name, age, occupation);
+
+        System.out.println("\nPerson Details:");
+        person.displayDetails();
+
+    }
+}

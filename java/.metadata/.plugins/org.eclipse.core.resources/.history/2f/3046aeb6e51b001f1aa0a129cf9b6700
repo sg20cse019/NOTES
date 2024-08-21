@@ -1,0 +1,18 @@
+package com.jspiders;
+
+public class objectarray {
+
+	public static String getID;
+	public static String getName;
+	public static String getSalary;
+	public static String getexp;
+
+	public objectarray(int i, String string, int j, double d) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

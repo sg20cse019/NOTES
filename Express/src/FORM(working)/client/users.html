@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USer Profiles</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="usersSection">
+        <button onclick="fetchData()">fetchData</button>
+    </section>
+    <script>
+        let section = document.querySelector('section')
+        function fetchData() {
+            fetch('http://localhost:5000/users')
+            .then((res)=>res.json())
+            .then((data)=>{
+                console.log(data)
+                section.innerHTML=`${data.map((user)=>{
+                return`<article>
+                    <h1>${user.name}</h1>
+                    <button onclick="goToProfile('${user._id}')">Click</button>
+                    </article>`})}`
+            })
+            .catch((err)=>{err})
+        }
+        function goToProfile(id) {  
+            console.log(id);          
+            window.location.assign(`./userProfile.html?id=${id}`)
+        }
+
+        
+    </script>
+</body>
+</html>

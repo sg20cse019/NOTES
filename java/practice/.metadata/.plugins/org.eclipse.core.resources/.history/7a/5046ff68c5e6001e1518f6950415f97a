@@ -1,0 +1,17 @@
+package javabasic;
+
+public class javabasic1 {
+ 
+    public static void main(String[] args) {
+    	int bal = 175000;
+        int withdraw = 2000;
+        int i=1;
+       while(i<=90) {
+    	   if (bal>=1000) {
+    		   bal -= withdraw;
+    	   }
+    	   System.out.println(i);
+    	  i++;
+      }
+    }
+}

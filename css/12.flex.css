@@ -1,0 +1,21 @@
+section>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#b1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+#b2{
+    height: 100px;
+    width: 100px;
+    background-color:green;
+}
+#b3{
+    height: 100px;
+    width: 100px;
+    background-color:blue;
+}

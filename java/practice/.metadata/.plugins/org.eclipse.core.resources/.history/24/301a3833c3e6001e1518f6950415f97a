@@ -1,0 +1,15 @@
+package javabasic;
+
+public class javabasic1 {
+ 
+    public static void main(String[] args) {
+      int bal = 175000;
+      int withdraw = 2000;
+      
+      for(int i=1 ; i<=0 ; i++) {
+    	  
+      System.out.println(bal -= withdraw);
+    	  
+      }
+    }
+}

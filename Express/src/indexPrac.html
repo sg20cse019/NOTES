@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter The Input">
+    <button onclick="submit(event)">Submit</button>
+    <button onclick="getData()">GetData</button>
+    <script>
+let input = document.querySelector('input');
+function submit(event) {
+    event.preventDefault();
+    fetch('https://localhost:5000/submitform', {
+        method: 'POST',
+        headers: {'content-type': 'application/json'},
+        body: JSON.stringify({Name: input.value})
+    })
+    .then(() => { console.log('success ' + input.value); })
+    .catch((err) => { throw err; });
+}
+
+function getData() {
+    fetch('https://localhost:5000/api')
+    .then((response) => response.json())
+    .then((data) => { console.log(data); })    
+    .catch((err) => { throw err; });
+}
+    </script>
+</body>
+</html>

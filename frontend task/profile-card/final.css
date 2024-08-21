@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes bg {
+    0%{ background-color:blueviolet; }
+    10%{ background-color:rgb(43, 147, 226); }
+    25%{ background-color:rgb(43, 226, 61); }
+    50%{ background-color:rgb(224, 48, 133); }
+    75%{ background-color:rgb(226, 43, 52); }
+    100%{ background-color:rgb(180, 226, 43); }
+    
+}
+section {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgb(95, 22, 107), rgb(35, 33, 33));
+    border: 1px solid black;
+}
+
+section>article {
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 250px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 250px;
+    padding: 20px;
+    background-color: rgb(50, 18, 86);
+    color: azure;
+    border-radius: 20px;
+    box-shadow: 10px 20px 30px black;
+    box-sizing: content-box;
+    
+}
+
+section>article>#prologo {
+    width: 29px;
+    background-color: rgb(247, 213, 16);
+    border: 8px solid black;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: black;
+    text-align: center;
+    border: 2px black;
+}
+
+section>article>#profile>img {
+    padding: 5px;
+    margin-left: 1px;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #500456;
+    box-sizing: content-box;
+    text-align: center;
+}
+
+section>article>#profile>img:hover{
+    transform: rotate( 360deg) scale(0.7);
+    transition: 10s;
+}
+
+section>article>#namedetails {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px;
+
+}
+
+section>article>.button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    animation-name:bg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+section>article>.follow-button {
+    background-color: #620657;
+    color: white;
+    border:2px #620657;
+}
+
+section>article>.message-button {
+    background-color: #620657;
+    color: white;
+    border:2px #620657;
+
+}
+
+section>article>.button:hover {
+    opacity: 0.8;
+    background-color:rgb(50, 18, 86) ;
+}
+
+section>article>#line {
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+
+section>article>#footer {
+    margin-top: 3px;
+    text-align: center;
+    line-height: 20px;
+    font-style: bold;
+    font-size: 12px;
+    word-spacing: 30px;
+}

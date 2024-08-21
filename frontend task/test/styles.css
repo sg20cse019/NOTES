@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgb(52, 73, 110) ,rgb(34, 53, 86));
+}
+section>nav{
+    background-color: rgb(26, 25, 25);
+    color: aliceblue;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+section>nav>h2{
+    margin-left: 10px;
+    width: 85%;
+}
+section>nav>#navbtn{
+    height: 32px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(41, 115, 225);
+    background-color: #3d3d3d;
+    border-radius: 7%;
+    border: none;
+}
+section>nav>#navbtn:hover{
+    background-color: #272525;
+}
+section>.mainpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section>.mainpage>.backsq{
+    background:radial-gradient(yellow,orange);
+    height: 380px;
+    width: 380px ;
+    border-radius: 10px;
+    position: absolute;
+    top:150px;
+    transform: rotate(-8deg);
+
+}
+section>.mainpage>.frontsq{
+    background-color: aliceblue;
+    height: 380px;
+    width: 380px ;
+    border-radius: 10px;
+    position: absolute;
+    top:150px;
+}
+section>.mainpage>.frontsq>h1{
+    position: absolute;
+    top: 70px;
+    left:30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+section>.mainpage>.frontsq>#name{
+    position: absolute;
+    top: 120px;
+    left:30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: medium;
+    background-color: aliceblue;
+    border-right:none;
+    border-left: none;
+    border-top:2px #272525;
+    width: 80%;
+    height: 30px;
+}
+section>.mainpage>.frontsq>#name:focus{
+    outline: none;
+}
+section>.mainpage>.frontsq>#pass:focus{
+    outline: none;
+}
+
+section>.mainpage>.frontsq>#pass{
+    position: absolute;
+    background-color: aliceblue;
+    height: 30px;
+    top: 170px;
+    border-right:none;
+    border-left: none;
+    border-top:2px #272525;
+    left:30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: medium;
+    /* border: none; */
+    width: 80%;
+}
+section>.mainpage>.frontsq>.loginbtn{
+    position: absolute;
+    top: 230px;
+    left:30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: medium;
+    border: none;
+    width: 80%;
+    background-color: #272525;
+    color: aliceblue;
+    height: 30px;
+    width: 25%;
+    border-radius: 10px;
+}
+

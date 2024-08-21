@@ -1,0 +1,19 @@
+section{
+    background-color: tomato;
+    height: 100vh; /* it is based on body of the page */
+    width: 100wh;
+}
+section > div {
+    background-color: springgreen;
+    height: 50%; /*perc occupy based on the parent body of tag */
+    width: 50%;
+}
+section>div>article{
+    background-color: steelblue;
+    height: 25%;
+    width: 25%;
+}
+
+/*pixels i.e px are in the scale if 1000px in terms of body size
+perc are in the scale of 100% based on the parent body 
+vh for height and vw for width are based body , scale is 100 for body */

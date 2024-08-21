@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div>
+        <input type="text" placeholder="name">
+        <input type="email" placeholder="EMAIL">
+        <input type="number" placeholder="phone">
+        <input type="password" placeholder="password">
+        <button type="submit">UPDATE</button>
+    </div> -->
+    <section>
+        <div class="mainpage">
+            <div class="backsq">
+            </div>
+            <div class="frontsq">
+                <input id="name" type="text" placeholder="Name">
+                <input id="email" type="email" placeholder="Email Address">
+                <input id="PhoneNo" type="tel" placeholder="Phone-No">
+                <input id="pass" type="password" placeholder="password">
+                
+                <button class="loginbtn" id="Login" onclick="formHandle()">Login</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        let url = window.location.search
+        let obj = new URLSearchParams(url)
+        let id = obj.get("id")
+   
+   
+   
+        let inputs = document.querySelectorAll("input")
+   
+        function getData(){
+           fetch(`http://localhost:5000/users/${id}`)
+           .then((res)=>{return res.json()})
+           .then((data)=>{
+               inputs[0].value = data.name
+               inputs[1].value = data.email
+               inputs[2].value = data.Phone
+               inputs[3].value = data.password
+           })
+           .catch(()=>{console.log("fail");})
+        }
+   
+        getData()
+   
+        function formHandle(){
+           let payload = {
+               name: inputs[0].value,
+               email:inputs[1].value,
+               Phone:inputs[2].value,
+               password:inputs[3].value
+           }
+           fetch(`http://localhost:5000/users/${id}`,{
+               method:"PUT",
+               headers:{"content-type":"application/json"},
+               body:JSON.stringify(payload)
+           }).then(()=>{
+               console.log("data updated");
+               window.location.assign(`userProfile.html?id=${id}`)
+            })
+             .catch(()=>{console.log("data didnot update");})
+        }
+      </script>
+</body>
+</html>

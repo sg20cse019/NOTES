@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\alokk\OneDrive\Desktop\jspider\java\basics\.metadata\.plugins\org.eclipse.jdt.core
+1306806701.index
+3413270776.index
+1865797976.index

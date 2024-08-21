@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./classic-retro-gaming-console-thumb.jpg') no-repeat center center fixed;
+    background-size: cover;
+    transition: background-image 5s linear;
+    background-size: cover;
+    height: 100%;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('./1007172.jpg');
+    }
+
+    33% {
+        background-image: url('./749172.png');
+    }
+
+    66% {
+        background-image: url('./749251.jpg');
+    }
+
+    100% {
+        background-image: url('./classic-retro-gaming-console-thumb.jpg');
+    }
+}
+
+section {
+    animation: changeBackground 6s infinite;
+}
+
+article {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.username,
+.password {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.userlabel,
+.userpass {
+    color: white;
+    margin-bottom: 5px;
+}
+
+#loginbtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#loginbtn:hover {
+    background-color: #45a049;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.newuser{
+    color: white;
+    padding: 10px;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+#profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+img.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-info p {
+    margin: 0;
+    color: #666;
+}
+
+.user-info .name {
+    font-weight: bold;
+    color: #333;
+}
+
+.user-bio {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.user-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-stats div {
+    text-align: center;
+}
+
+.user-stats div p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+}
+
+.user-stats div span {
+    display: block;
+    color: #666;
+}
